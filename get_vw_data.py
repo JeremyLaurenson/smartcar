@@ -56,6 +56,7 @@ print(percentage)
 if(percentage<.80):
     if(state=="NOT_CHARGING"):
         print("Alert - car is not charged, and is not charging!")
+        # this is where I post a status to homebridge/homeassistant
         url = 'http://localhost:51828/?accessoryId=evchargealert&state=true'
         page = urllib.request.urlopen(url)
         print(page.read())
