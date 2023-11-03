@@ -1,11 +1,14 @@
 # smartcar
 Simple scripts for getting car status from smarter.com
+By Jeremy Laurenson
+Please include attribition if you reuse this kernel of code.
 
 This is a very bare bones implimentation for someone else to take and run with. Smartcar.com allows you to set up a single user license and go query their api (300 times a month) for your car data. This, for VW cars, includes battery and charging status.
 
 To get this working:
 
 1... Install the smartcar library for python by executing: pip install smartcar
+1.1. Install the pickle library for python by executing: pip install pickle
 2... Go to smartcar.com and sign up for an account
 3... On smartcar.com create a new application, and note the client id and client secret.
 4... *.py files put your client id and secret into the appropriate areas
