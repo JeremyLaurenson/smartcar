@@ -16,7 +16,7 @@ To get this working:
 <LI>Copy and paste that URL into your browser, but be sure to change the "test" mode to "live" mode in the URL it returns eg:
 <BR><PRE>https://connect.smartcar.com/oauth/authorize?response_type=code&client_id=blahblah&redirect_uri=http%3A%2F%2Flocalhost%2Fsmartcar%2Fredirect%2F&approval_prompt=auto&scope=read_vehicle_info+read_battery+read_charge&mode=test</PRE> becomes
 <BR><PRE>https://connect.smartcar.com/oauth/authorize?response_type=code&client_id=blahblah&redirect_uri=http%3A%2F%2Flocalhost%2Fsmartcar%2Fredirect%2F&approval_prompt=auto&scope=read_vehicle_info+read_battery+read_charge&mode=live</PRE>
-<BR>      This will take you through the user authentication phase and allow you to select your car and authorize your app to read it.</LI>
+<BR>      This will take you through the user authentication phase and allow you to select your car and authorize your app to read it and redirect you ro a new URL... the code part of that url is what youre looking for</LI>
 <LI>7... Edit the auth_step1.py file and use the returned CODE part of the URL to populate the 'put code here' section</LI>
 <LI>8... Execute auth_step1.py   This will save the authentication and refresh tokens used to access your car via smartcar.com from here on out.</LI>
 <LI>9... Execute refreshtoken.py at least once every 2 hours to exchange your authen tication tokens for fresh ones.</LI>
