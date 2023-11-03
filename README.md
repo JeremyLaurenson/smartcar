@@ -11,7 +11,7 @@ To get this working:
 <LI>Install the pickle library for python by executing: pip install pickle</LI>
 <LI>Go to smartcar.com and sign up for an account</LI>
 <LI>On smartcar.com create a new application, and note the client id and client secret.</LI>
-<LI>*.py files put your client id and secret into the appropriate areas</LI>
+<LI>*.py files put your client id and secret into the appropriate areas (I know about includes but I rushed this)</LI>
 <LI>Execute auth_step0.py in order to get an authentiction URL. This would normally be the URL you would send your user to.</LI>
 <LI>Copy and paste that URL into your browser, but be sure to change the "test" mode to "live" mode in the URL it returns eg:
 <BR><PRE>https://connect.smartcar.com/oauth/authorize?response_type=code&client_id=blahblah&redirect_uri=http%3A%2F%2Flocalhost%2Fsmartcar%2Fredirect%2F&approval_prompt=auto&scope=read_vehicle_info+read_battery+read_charge&mode=test</PRE> becomes
