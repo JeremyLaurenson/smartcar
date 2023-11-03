@@ -3,6 +3,8 @@ Simple scripts for getting car status from smarter.com
 By Jeremy Laurenson
 Please include attribition if you reuse this kernel of code.
 
+I use this to remind us at 8:30P if the car isnt charged up past 70% and isnt currently charging.
+
 This is a very bare bones implimentation for someone else to take and run with. Smartcar.com allows you to set up a single user license and go query their api (300 times a month) for your car data. This, for VW cars, includes battery and charging status.
 
 To get this working:
